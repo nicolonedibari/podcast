@@ -1,0 +1,104 @@
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 50px;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color: #b0c4de;
+    width: 100%;
+    height: 150px;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    all: unset;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.information ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.information li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.information{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #b0c4de;
+    width: 100%;
+    height: 30px;
+}
+
+.icons{
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    margin-left: 30px;
+}
+
+.titoletto{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #228b22;
+    background-color: #e6e6fa;
+    border-radius: 20px;
+    border: solid 2px;
+    padding: 15px;
+    border-color: #000;
+}
+
+.li:hover
+{
+    transform: scale(1.2);
+    z-index: 2;
+    .titoloarticolo{
+        font-weight: bold;
+        color: #000;
+    }
+}
+
+#titoletto:hover{
+    transform: scale(1.1);
+    background-color: #e6e6fa;
+    color: black(127, 40, 204);
+}
+
+ul li{
+    color: black;
+    font-size: 20px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

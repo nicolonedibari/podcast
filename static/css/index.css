@@ -114,7 +114,7 @@ button {
     color: black(127, 40, 204);
 }
 
-.schools{
+.podcast{
     font-size: 25px;
     flex-direction: column;
     align-items: center;
@@ -128,7 +128,7 @@ button {
     margin-bottom: 100px;
 }
 
-#schools:hover{
+#podcast:hover{
     transform: scale(1.1);
     background-color: #e6e6fa;
     color: black(127, 40, 204);
