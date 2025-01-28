@@ -1,0 +1,162 @@
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color:#fff;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+button {
+    all: unset;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background-color: #b0c4de;
+    width: 100%;
+    height: 150px;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+.information ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.information li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.information{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #b0c4de;
+    width: 100%;
+    height: 30px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 75px;
+}
+
+.div:hover
+{
+    transform: scale(1.2);
+    z-index: 2;
+    .titoloarticolo{
+        font-weight: bold;
+        color: #000;
+    }
+}
+
+.recycle{
+    font-size: 25px;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px;
+    display: flex;
+    justify-content: center;
+    background-color: #e6e6fa;
+    border-radius: 10%;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 500px;
+}
+
+#recycle:hover{
+    transform: scale(1.1);
+    background-color: #e6e6fa;
+    color: black(127, 40, 204);
+}
+
+.education{
+    font-size: 25px;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px;
+    display: flex;
+    justify-content: center;
+    background-color: #e6e6fa;
+    border-radius: 10%;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+#education:hover{
+    transform: scale(1.1);
+    background-color: #e6e6fa;
+    color: black(127, 40, 204);
+}
+
+.schools{
+    font-size: 25px;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px;
+    display: flex;
+    justify-content: center;
+    background-color: #e6e6fa;
+    border-radius: 10%;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+#schools:hover{
+    transform: scale(1.1);
+    background-color: #e6e6fa;
+    color: black(127, 40, 204);
+}
+
+.icons{
+    width: 190px;
+    height: 190px;
+    padding: 0;
+    margin: 0;
+}
+
+.form{
+    font-size: 25px;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px;
+    display: flex;
+    justify-content: center;
+    background-color: #e6e6fa;
+    border-radius: 10%;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+.form #bottone{
+    background-color: #b0c4de;
+    width: 100px;
+    border-radius: 15px;
+}
