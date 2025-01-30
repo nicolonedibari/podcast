@@ -1,0 +1,258 @@
+:root {
+    --primary-color: #b0c4de;
+    --secondary-color: #b0c4de;
+    --background-color: #e5e6fa;
+    --text-color: #000;
+    --border-color: #000;
+    --focus-outline-color: #4a90e2;
+    --header-height: 280px;
+}
+
+body {
+    font-family: 'Anta', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    overflow-x: hidden;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: var(--header-height);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.brand-header {
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+}
+
+.brand-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 2.94rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.brand-logo {
+    width: 190px;
+    height: auto;
+    object-fit: contain;
+    z-index: 10;
+}
+
+.brand-name {
+    margin-top: -1rem;
+    color: var(--border-color);
+}
+
+.main-content {
+    flex: 1;
+    position: relative;
+    padding-top: 2rem;
+}
+
+.background-wrapper {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    margin-top: var(--header-height);
+}
+
+.background-pattern {
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+    min-height: 1000px;
+}
+
+.navigation-area {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+    left: 0;
+}
+
+.back-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    border: 5px solid var(--border-color);
+    padding: 1rem;
+    width: 110px;
+    height: 110px;
+    transition: transform 0.2s ease;
+    position: fixed;
+    left: 20px;
+    border-radius: 25px;
+}
+
+.back-arrow:focus {
+    outline: 3px solid var(--focus-outline-color);
+    outline-offset: 2px;
+}
+
+.back-arrow:hover {
+    transform: scale(1.05);
+}
+
+.back-arrow-image {
+    width: 90px;
+    height: auto;
+}
+
+.content-area {
+    position: relative;
+    z-index: 1;
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-box {
+    background-color: var(--background-color);
+    border: 5px solid var(--border-color);
+    border-radius: 22px;
+    padding: 2rem;
+    color: #228b22;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-left: 138px;
+}
+
+.content-box h2 {
+    color: #228b22;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.content-box ul li {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.content-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.motto {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.authors {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.footer-logo-container {
+    padding: 2rem;
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+}
+
+.footer-logo {
+    width: 190px;
+    height: auto;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #228b22;
+    color: white;
+    padding: 8px;
+    z-index: 1031;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+@media screen and (max-width: 991px) {
+    :root {
+        --header-height: 240px;
+    }
+
+    .content-area {
+        padding: 0 1rem;
+    }
+
+    .back-arrow {
+        width: 90px;
+        height: 90px;
+    }
+
+    .back-arrow-image {
+        width: 70px;
+    }
+
+    .footer-logo {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    :root {
+        --header-height: 220px;
+    }
+
+    .content-box {
+        padding: 1rem;
+    }
+
+    .back-arrow {
+        width: 70px;
+        height: 70px;
+    }
+
+    .back-arrow-image {
+        width: 50px;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
+
+@media screen and (forced-colors: active) {
+    .back-arrow,
+    .content-box {
+        border: 2px solid CanvasText;
+    }
+}
+
+@media screen and (prefers-contrast: more) {
+    :root {
+        --primary-color: #006400;
+        --text-color: #000000;
+        --background-color: #ffffff;
+    }
+}
