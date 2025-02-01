@@ -19,11 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
     timeDisplay.appendChild(document.createTextNode(' / '));
     timeDisplay.appendChild(durationDisplay);
 
+
     const audio = new Audio('static/audio/siste.mp3');
     let isPlaying = false;
     let progressInterval;
 
-    audio.preload = 'metadata'; // Preload metadata to get duration early
+    audio.preload = 'metadata'; 
 
     function formatTime(seconds) {
         if (!isFinite(seconds)) return '0:00';
@@ -48,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function togglePlayState() {
         if (!isPlaying) {
-            const playPromise = audio.play(); // Removed audio.load() here
+            const playPromise = audio.play(); 
             if (playPromise !== undefined) {
                 playPromise
                     .then(() => {

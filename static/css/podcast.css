@@ -49,14 +49,7 @@ body {
     z-index: 2;
 }
 
-.brand-header::after {
-    content: "";
-    display: block;
-    height: 80px; 
-    background: #001530;
-    position: relative;
-    top: 70px;
-}
+
 
 .brand-wrapper {
     display: flex;
@@ -82,6 +75,7 @@ body {
     color: var(--border-color);
     text-align: center;
     margin-left: 17px;
+    margin-bottom: 40px;
 }
 
 .navigation-area {
@@ -132,7 +126,7 @@ body {
 }
 
 .background-image {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
