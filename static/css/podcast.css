@@ -35,7 +35,6 @@ body {
     transform: translateX(-50%);
 }
 
-/* Header Section */
 .header {
     background-color: var(--header-bg);
     margin-bottom: 0;
@@ -85,12 +84,11 @@ body {
     margin-left: 17px;
 }
 
-/* Navigation */
 .navigation-area {
     position: relative;
     margin: 0;
     padding: 0;
-    top: 150px; /* Position 150px below brand header */
+    top: 150px; 
     left: 20px;
     height: 0;
     z-index: 3;
@@ -126,12 +124,11 @@ body {
     transform: scale(1.2);
 }
 
-/* Podcast Content */
 .podcast-container {
     position: relative;
     min-height: 100vh;
     padding: 0 1rem;
-    margin-top: 100px; /* Adjusted spacing */
+    margin-top: 100px; 
 }
 
 .background-image {
@@ -146,7 +143,7 @@ body {
 
 .podcast-section {
     max-width: 828px;
-    margin: 30px auto 0 auto; /* 30px from blue background */
+    margin: 30px auto 0 auto; 
     padding-top: 40px;
 }
 
@@ -187,7 +184,6 @@ body {
     height: auto;
 }
 
-/* Episodes List */
 .episodes-list {
     display: flex;
     flex-direction: column;
@@ -212,7 +208,7 @@ body {
     color: green;
     font-size: 2rem;
     font-weight: bold;
-    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 10px black;
     paint-order: stroke fill;
     min-width: 40px;
     text-align: center;
@@ -238,7 +234,6 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .podcast-section {
         margin: 30px 1rem 0 1rem;
@@ -273,15 +268,15 @@ body {
     }
 
     .navigation-area {
-        top: 130px; /* Adjusted for mobile */
+        top: 130px; 
     }
 
     .brand-header::after {
-        height: 160px; /* Reduced for mobile */
+        height: 160px; 
     }
 
     .podcast-container {
-        margin-top: 80px; /* Adjusted for mobile */
+        margin-top: 80px; 
     }
 }
 

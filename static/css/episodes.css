@@ -48,10 +48,11 @@
 
 .brand-name {
     font-family: 'Jockey One', sans-serif;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: 40px;
     color: var(--border-color);
     margin: 0;
     line-height: 1.2;
+    margin-top: -32px;
 }
 
 .main-content {
