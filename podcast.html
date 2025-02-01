@@ -3,40 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/education.css">
-    <link rel="stylesheet" href="static/css/commons.css">
-    <title>PODCAST</title>
+    <meta name="description" content="SecurEvolution Podcast - Episodes about security and technology">
+    <title>SecurEvolution Podcast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/podcast.css">
 </head>
 <body>
-    <div>
-        <header class="logo">
-            <img class="image" src="static/img/Securevolution_logo_for_podcast-removebg-preview.png">
-        </header>
-        <main class="main">
-            <div class="title">
-                <h2 class="anta-regular">PODCAST</h2>
-                <img class="icons" src="static/img/pexels-cottonbro-6878179-removebg-preview.png">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header" role="banner">
+        <div class="brand-header">
+            <div class="container d-flex flex-column align-items-center brand-wrapper">
+                <img src="static/img/logo.png" alt="SecurEvolution company logo" class="brand-logo img-fluid" />
+                <h1 class="brand-name">SecurEvolution</h1>
             </div>
-            <div>
-                <ol>
-                    <li class="titoletto anta-regular" id="titoletto">Puntata 1: Sicurezza nel mondo delle reti
-                        <ul>
-                            <a href="podSiste.html"><li class="varela-regular">ASCOLTA CLICCANDO QUI!</li></a>
-                        </ul>
-                    </li>
-                    <li class="titoletto anta-regular" id="titoletto">Puntata 2: Evoluzione della sicurezza nel mondo del lavoro
-                        <ul>
-                            <a href="podIta.html"><li class="varela-regular">ASCOLTA CLICCANDO QUI!</li></a>
-                        </ul>
-                    </li>
-                    <li class="titoletto anta-regular"id="titoletto">Puntata 3: Sicurezza sociale: la ludopatia
-                        <ul>
-                            <a href="podMate.html"><li class="varela-regular">ASCOLTA CLICCANDO QUI!</li></a>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-        </main>
-    </div>
+        </div>
+    </header>
+    <nav class="navigation-area" role="navigation" aria-label="Back navigation">
+        <div class="back-arrow-container">
+            <a href="index.html" class="back-arrow" aria-label="Go back to previous page">
+                <img src="static/img/back-arrow.png" alt="" class="back-arrow-image" aria-hidden="true">
+            </a>
+        </div>
+    </nav>
+    <main id="main-content" class="main-content" role="main">
+        <div class="podcast-container">
+            <img src="static/img/back-pod.jpg" alt="" class="background-image" aria-hidden="true"/>
+            
+            <section class="podcast-section" aria-labelledby="podcast-heading">
+                <div class="podcast-header">
+                    <div class="title-group d-flex flex-column flex-md-row align-items-center justify-content-center">
+                        <h2 id="podcast-heading" class="podcast-title">PODCAST</h2>
+                        <div class="microphone-container">
+                            <img src="static/img/microphone.png" alt="Microphone icon" class="microphone-icon"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="episodes-list">
+                    <article class="episode">
+                        <span class="episode-number" aria-hidden="true">1.&nbsp</span>
+                        <div class="episode-content">
+                            <h3 class="episode-title">Puntata 1: Sicurezza nel mondo delle reti</h3>
+                            <a href="podSiste.html" class="episode-link">ASCOLTA CLICCANDO QUI!</a>
+                        </div>
+                    </article>
+
+                    <article class="episode">
+                        <span class="episode-number" aria-hidden="true">2.</span>
+                        <div class="episode-content">
+                            <h3 class="episode-title">Puntata 2: Evoluzione della sicurezza nel mondo del lavoro</h3>
+                            <a href="podIta.html" class="episode-link">ASCOLTA CLICCANDO QUI!</a>
+                        </div>
+                    </article>
+
+                    <article class="episode">
+                        <span class="episode-number" aria-hidden="true">3.</span>
+                        <div class="episode-content">
+                            <h3 class="episode-title">Puntata 3: Sicurezza sociale: la ludopatia</h3>
+                            <a href="podMate.html" class="episode-link">ASCOLTA CLICCANDO QUI!</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </body>
 </html>
