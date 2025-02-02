@@ -43,6 +43,11 @@ body {
     height: auto; 
     object-fit: contain; 
     z-index: 10; 
+    transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+    transform: scale(1.05);
 }
 
 .brand-name {
